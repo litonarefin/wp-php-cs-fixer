@@ -3,6 +3,7 @@
     "description": "PHP CS Fixer for WordPress",
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "PixarLabs\\": "src/"
