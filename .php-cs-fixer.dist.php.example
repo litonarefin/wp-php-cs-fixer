@@ -1,0 +1,23 @@
+<?php
+require_once __DIR__ . '/vendor/litonarefin/wp-php-cs-fixer/loader.php';
+
+$finder = PhpCsFixer\Finder::create()
+    ->exclude('node_modules')
+    ->exclude('vendors')
+    ->exclude('assets')
+    ->in( __DIR__ )
+;
+
+$config = new PhpCsFixer\Config();
+$config
+    ->registerCustomFixers([
+        new PixarLabs\Fixer\SpaceInsideParenthesisFixer(),
+        new PixarLabs\Fixer\BlankLineAfterClassOpeningFixer()
+    ])
+    ->setRiskyAllowed(true)
+    ->setUsingCache(false)
+    ->setRules( PixarLabs\Fixer\Fixer::rules() )
+    ->setFinder( $finder )
+;
+
+return $config;
