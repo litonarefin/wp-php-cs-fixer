@@ -62,4 +62,6 @@ The `PixarLabs\Fixer\Fixer::rules()` function simplifies the usage of the WordPr
 
 The example [.php_cs.example](https://github.com/litonarefin/wp-php-cs-fixer/blob/master/.php-cs-fixer.dist.php.example) file should be a fine starting point for your plugins. Just drop the file into your plugin folder by renaming to `.php-cs-fixer.dist.php` and you are good to go.
 
-Upon configuring everything, run `php-cs-fixer fix` from the commandline.
+## Commandline
+For checking specific file, run `php-cs-fixer fix your-file-name` from your favorite Terminal or Commandline software.
+Upon configuring everything, run `php-cs-fixer fix` from your favorite Terminal or Commandline software.
